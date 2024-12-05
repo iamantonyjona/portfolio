@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Profile</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" 
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="container mt-4 header">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <!-- Brand Name -->
+        <a class="navbar-brand" href="#">Portfolio</a>
+
+        <!-- Menu Icon / Toggle Button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!-- Navbar end -->
+
+  <div class="container mt-4">
+    <!-- Home start -->
+    <section class="home" id="home">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="pt-5">
+            <h3 class="hello">Hello, It's Me</h3>
+            <h1 class="name">Antony Jona</h1>
+            <h3 class="hello">And I'm a <span class="multiple-text"></span></h3>
+            <p class="pt-3 content">I am a Web Developer with a vast array of knowledge
+              in many different front-end and back-end languages.</p>
+          </div>
+          <div class="social-media d-inline-flex justify-content-center align-items-center">
+            <a href="https://www.linkedin.com/in/antony-jona-7b45392ba/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/iamantonyjona" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/iam_a_n_t_o_n_y_/?hl=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://x.com/Iam_antony_jona" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+          <a download="" href="./CV.pdf" class="downloadcv">Download CV</a>
+        </div>
+        <div class="col-md-6 pt-5">
+          <div class="homeimg">
+            <img src="assets/jona.png" class="rounded d-block mx-auto" width="85%" height="100%" alt="jona">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Home end -->
+    <!--About start-->
+    <section class="about" id="about">
+      <div class="row about">
+        <div class="col-md-6 pt-5">
+          <div class="aboutimg">
+            <img src="assets/about.png" class="rounded d-block mx-auto" width="85%" height="100%" alt="aboutimg">
+          </div>
+        </div>
+        <div class="col-md-6 pt-5">
+          <div class="about-content">
+            <h2 class="about-title">About<span>Me</span></h2>
+            <h3 class="about-title2">Full Stack Developer!</h3>
+            <p class="about-p">A highly motivated and enthusiastic web developer with a comprehensive skill set in both front-end and back-end technologies. 
+              Proficient in HTML, CSS, Bootstrap, and JavaScript, Jquery developing responsive and user-friendly interfaces. 
+              Experienced in using React.js for building dynamic web applications and Node.js for server-side programming. 
+              Competent in Python and Django for creating robust, scalable web applications and well-versed in MySQL for effective database management.
+               Eager to leverage these skills in a challenging role and contribute to innovative web development projects</p>
+               <a href="#" class="readme">Readme More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--About end-->
+    <!--Skills Start-->
+    <section class="skill" id="skills">
+      <div class="row skills-row">
+        <h1 class="text-center pt-5 mt-4 skills-header">Skil<span>ls</span></h1>
+        <div class="col-md-4 box">
+          <h3  class="box-header">Front <span>End</span></h3>
+          <p><span class="box-icon"><i class="fa-brands fa-html5"></i></span> HTML</p>
+          <p><span class="box-icon"><i class="fa-brands fa-css3-alt"></i></span> CSS</p>
+          <p><span class="box-icon"><i class="fa-brands fa-js"></i></span> JavaScript</p>
+          <p><span class="box-icon"><i class="fa-brands fa-js"></i></span> Jquery</p>
+          <p><span class="box-icon"><i class="fa-brands fa-bootstrap"></i></span> Bootstrap</p>
+        </div>
+        <div class="col-md-4 box">
+          <h3 class="box-header">Back <span>End</span></h3>
+          <p><span class="box-icon"><i class="fa-brands fa-python"></i></span>Python</p>
+          <p><span class="box-icon"><i class="fa-solid fa-database"></i></span>MySQL</p>
+        </div>
+        <div class="col-md-4 box">
+          <h3 class="box-header">Frame <span>Work</span></h3>
+          <p><span class="box-icon"><i class="fa-brands fa-react"></i></span>React Js</p>
+          <p><span class="django-logo">dj</span>Django</p>
+        </div>
+      </div>
+    </section>
+    <!--Skills end-->
+    <!--Project Start-->
+    <section class="project" id="projects">
+      <div class="row projects-row">
+        <h1 class="text-center pt-5 mt-4 projects-header">Pro<span>jects</span></h1>
+        <div class="col-md-12 project-box">
+          <div class="owl-carousel">
+            <div class="item">
+              <img src="assets/proimg/blog.PNG" class="rounded d-flex mx-auto" width="50%" height="50%" alt="blog">
+              <h4>Blog <span>Website</span></h4>
+              <p>This project developing a full-featured blog website using the Django framework,</p>
+              <a href="https://github.com/iamantonyjona/blog-website-" target="_blank"><i class="fa-solid fa-link"></i></a>
+            </div>
+            <div class="item">
+              <img src="assets/proimg/car.PNG" class="rounded d-flex mx-auto" width="50%" height="50%" alt="car">
+              <h4>Car Rental <span>Website</span></h4>
+              <p>A React-based car rental website lets users browse vehicles, select rental dates, and book online.</p>
+              <a href="https://gorentalcar.netlify.app/" target="_blank"><i class="fa-solid fa-link"></i></a>
+            </div>
+            <div class="item">
+              <img src="assets/proimg/profil.PNG" class="rounded d-flex mx-auto" width="50%" height="50%" alt="profil">
+              <h4>Portfolio <span>Website</span></h4>
+              <p>Creating a professional portfolio is essential for showcasing your skills and  projects.</p>
+              <a href="https://iamantonyjona.github.io/portfolio/" target="_blank"><i class="fa-solid fa-link"></i></a>
+            </div>
+            <div class="item">
+              <img src="assets/proimg/app.PNG" class="rounded d-flex mx-auto" width="50%" height="50%" alt="profil">
+              <h4>ToDo App <span>Website</span></h4>
+              <p>To create a role-based to-do list application using Django and Python with MySQL as the database.</p>
+              <a href="https://github.com/iamantonyjona/Role-based-todoapp" target="_blank"><i class="fa-solid fa-link"></i></a>
+            </div>
+            <div class="item">
+              <img src="assets/proimg/animelog.PNG" class="rounded d-flex mx-auto" width="50%" height="50%" alt="profil">
+              <h4>Animation <span>Loginform</span> </h4>
+              <p>Creating an animated login form involves adding dynamic effects to make the user interface</p>
+              <a href="https://iamantonyjona.github.io/animation-loginform/" target="_blank"><i class="fa-solid fa-link"></i></a>
+            </div>
+            
+          </div>          
+        </div>
+      </div>
+    </section>
+    <!--Project End-->
+    <!--Contact start-->
+    <section class="Contact" id="contact">
+      <div class="row contact-row">
+        <h1 class="text-center pt-5 mt-4 contact-header">cont<span>acts</span></h1>
+        <div class="col-md-12 contact-box">
+          <form action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="52badcca-cc8d-451d-81e5-9983d93fdc5a">
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="fullName" name="Name" placeholder="Full Name">
+                  <label for="fullName">Full Name</label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-floating">
+                  <input type="email" class="form-control" id="email" name="Email" placeholder="Email Address">
+                  <label for="email">Email Address</label>
+                </div>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <div class="form-floating">
+                  <input type="number" class="form-control" id="contactNumber" name="Number" placeholder="Contact Number">
+                  <label for="contactNumber">Contact Number</label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="subject" name="Subject" placeholder="Email Subject">
+                  <label for="subject">Email Subject</label>
+                </div>
+              </div>
+            </div>
+            <div class="mb-3">
+              <div class="form-floating">
+                <textarea class="form-control" id="message" name="Message" placeholder="Your Message" rows="10" style="height: 150px;"></textarea>
+                <label for="message">Your Message</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 mt-2 d-flex justify-content-center align-items-center">
+                <button type="submit" class="btn btn-primary d-inline-flex justify-content-center align-items-center">Send Message</button>
+              </div>
+            </div> 
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!--Footer start-->
+  <footer class=" text-white">
+    <div class="container-fluid mt-4 text-center">
+      <div class="row footer-row">
+        <div class="col-md-6 Rights">
+          <p>Copyright &copy; 2024 by Jona | All Rights Reserved.</p>
+        </div>
+        <div class="col-md-6 icon">
+          <a href="#home" class="chevrons-up">
+            <i class="fa-solid fa-circle-chevron-up"></i>
+          </a>
+        </div>
+      </div>  
+    </div>
+  </footer>
+  <!--scroll reveal-->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="script.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"  integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    $(document).ready(function(){
+      $('.owl-carousel').owlCarousel({
+        loop: true, // Makes the carousel loop
+        margin: 10, // Margin between items
+        nav: true,  // Show next/prev buttons
+        responsive: {
+          0: { items: 1 }, // 1 item on small screens
+          600: { items: 2 }, // 3 items on medium screens
+          1000: { items: 3 } // 5 items on large screens
+          }
+        });
+      });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,742 @@
+body{
+    background-color: #1f242d;
+    color: #fff;
+}
+
+/* Navbar start */
+.container.header {
+    background-color: #1f242d; /* Light gray background */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+} 
+a.navbar-brand {
+    font-family: cursive;
+    font-size: 30px;
+    font-weight: 800;
+    color: #fff;
+    cursor: default;
+}
+.navbar-brand:hover {
+    color:#fff;
+}
+li.nav-item {
+    font-family: cursive;
+    font-size: 20px;
+    margin-left: 23px;   
+}
+a.nav-link.active {
+    color: red !important;
+    border-bottom: 2px solid red;
+}
+.nav-link{
+position: relative;
+display: inline-block;
+color: white;
+text-decoration: none;
+transition: color 0.3s ease-in-out;
+}
+
+.nav-link::after {
+content: '';
+position: absolute;
+left: 0;
+bottom: -2px;
+width: 0;
+height: 2px;
+background: red;
+transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+color:red;
+}
+
+.nav-link:hover::after {
+width: 100%;
+}
+.navbar-toggler {
+    background: #fff;
+}
+  
+/* Navbar css end */
+
+/* Home css start */
+h3.hello {
+    font-family: cursive;
+    font-size: 38px;
+    font-weight: 900;
+}
+h1.name {
+    font-family: cursive;
+    font-size: 60px;
+    font-weight: 900;
+    margin-top: 15px;
+}
+span.multiple-text {
+    color: red;
+}
+p.content {
+    font-family: cursive;
+    font-weight: 900;
+}
+.social-media a {
+    font-size: 25px;
+    width: 52px;
+    height: 52px;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    background: transparent;
+    border: 2px solid red;
+    border-radius: 50%;
+    color: red;
+    margin: 10px 30px 20px 0;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.social-media a::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: red;
+    transform: rotate(45deg);
+    transition: all 0.5s ease;
+    z-index: 0;
+    border-radius: 50%;
+    transform: scale(0);
+}
+
+.social-media a:hover::before {
+    transform: scale(1);
+}
+
+.social-media a:hover {
+    color: white; /* Change text color */
+}
+
+.social-media a i {
+    position: relative;
+    z-index: 1;
+}
+a.downloadcv {
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(90deg, red, darkred, crimson, red);
+    background-size: 300%;
+    display: inline-block;
+    padding: 10px 19px;
+    border-radius: 35px;
+    font-family: monospace;
+    font-size: 23px;
+    letter-spacing: 10px;
+    animation: gradientSlide 3s infinite;
+    transition: transform 0.3s ease;
+}
+
+/* Sliding Gradient Animation */
+@keyframes gradientSlide {
+    0% {
+        background-position: 0%;
+    }
+    50% {
+        background-position: 100%;
+    }
+    100% {
+        background-position: 0%;
+    }
+}
+
+/* Hover Effect */
+a.downloadcv:hover {
+    transform: scale(1.1); /* Slight enlargement */
+    box-shadow: 0 4px 15px rgba(255, 0, 0, 0.6); /* Subtle shadow */
+}
+.homeimg {
+    animation: floatImage 4s ease-in-out infinite;
+    
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-2.4rem);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Home css end */
+
+/* About css start */
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.aboutimg {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+.about-content {
+    max-width: 600px;
+    text-align: left;
+    margin-top: 20px;
+}
+h2.about-title {
+    font-family: cursive;
+    font-size: 52px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+span {
+    color: red;
+}
+h2.about-title:hover {
+    color:white; /* Change color on hover */
+    transform: scale(1.05); /* Slightly increase size */
+    letter-spacing: 3px; /* Subtle letter-spacing effect */
+}
+
+h3.about-title2 {
+    font-family: cursive;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.about-p {
+    font-family: cursive;
+    font-size: 17px;
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.8;
+}
+a.readme {
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(90deg, red, darkred, crimson, red);
+    background-size: 300%;
+    display: inline-block;
+    padding: 10px 19px;
+    border-radius: 35px;
+    font-family: monospace;
+    font-size: 23px;
+    letter-spacing: 10px;
+    animation: gradientSlide 3s infinite;
+    transition: transform 0.3s ease;
+}
+
+/* Sliding Gradient Animation */
+@keyframes gradientSlide {
+    0% {
+        background-position: 0%;
+    }
+    50% {
+        background-position: 100%;
+    }
+    100% {
+        background-position: 0%;
+    }
+}
+
+/* Hover Effect */
+a.readme:hover {
+    transform: scale(1.1); /* Slight enlargement */
+    box-shadow: 0 4px 15px rgba(255, 0, 0, 0.6); /* Subtle shadow */
+}
+@media (max-width:600px) {
+    .about {
+        flex-direction: column-reverse;
+    }
+    a.readme {
+        letter-spacing: 0;
+    }
+}
+/* About css end */
+
+/* Skills css Start */
+.skills-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px;
+}
+.skills-header {
+    font-family: cursive;
+    font-size: 52px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+.skills-header:hover {
+    color:white; /* Change color on hover */
+    transform: scale(1.05); /* Slightly increase size */
+    letter-spacing: 3px; /* Subtle letter-spacing effect */
+}
+.box {
+    background: radial-gradient(black, transparent);
+    border: 1px solid #00000047;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 11px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    flex: 1 1 calc(33.333% - 40px);
+    max-width: calc(100% - 40px);
+
+    /* Slide-In Animation */
+    opacity: 0;
+    transform: translateX(-100px);
+    animation: slideFadeIn 1s ease forwards;
+}
+
+/* Keyframes for Slide-In with Fade */
+@keyframes slideFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.box:hover {
+    background: linear-gradient(145deg, #222, #444); /* Dark, metallic gradient */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.8); /* Intense shadow for depth */
+    transform: scale(1.1) translateY(-10px); /* Lift and zoom for interaction */
+    border: 1px solid #555; /* Define edges with subtle color */
+    transition: all 0.3s ease-in-out;
+}
+
+.box-header {
+    font-family: cursive;
+    font-size: 33px;
+    margin-bottom: 22px;
+    font-weight: 600;
+}
+
+span.box-icon {
+    font-size: 20px;
+    margin-right: 5px;
+    color: white;
+}
+/* Original styling for .box p */
+.box p {
+    font-size: 22px;
+    font-weight: 800;
+    font-family: cursive;
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    position: relative; /* For the sliding effect */
+}
+
+/* Hover effect with slide-up and text shadow */
+.box p:hover {
+    color: white; /* Changes text color to white */
+    background-color: #1b1a1a; /* Dark background on hover */
+    transform: translateY(-5px); /* Slide-up effect */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Adds a shadow for depth */
+}
+
+/* Text shadow effect */
+.box p:hover::before {
+    content: ''; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2); /* Slight shadow background */
+    z-index: -1; /* Ensure it stays behind text */
+    filter: blur(5px); /* Adds blur effect to shadow */
+}
+.django-logo {
+    background-color: #092e20;
+    color: white;
+    font-weight: bold;
+    padding: 2px 6px;
+    margin-right: 5px;
+    border-radius: 3px;
+    font-size: 0.9rem;
+}
+@media (max-width:600px) {
+    .skills-row {
+        display: block;
+        margin-left: 30px;
+    }
+}
+/* Skills css End */
+
+/* Project css Start */
+.projects-header {
+    font-family: cursive;
+    font-size: 52px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+.projects-header:hover {
+    color:white; /* Change color on hover */
+    transform: scale(1.05); /* Slightly increase size */
+    letter-spacing: 3px; /* Subtle letter-spacing effect */
+}
+.project-box {
+    padding: 2rem 1rem;
+}
+.owl-carousel .item {
+    text-align: center;
+    padding: 20px; /* Increased padding for better content spacing */
+    margin: 15px 10px; /* Balanced margins around the item */
+    background: radial-gradient(circle at center, rgba(0, 0, 0, 0.8), transparent 80%); /* Refined gradient */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Softer shadow for a subtle depth */
+    border-radius: 20px;
+    overflow: hidden; /* Ensures child elements don’t overflow the border-radius */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation for hover effects */
+}
+
+/* Hover Effect */
+.owl-carousel .item:hover {
+    transform: translateY(-10px); /* Moves the item upward slightly */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5); /* Enhances the shadow for emphasis */
+    background: radial-gradient(circle at center, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6) 80%); /* Darkens the gradient */
+}
+
+
+.owl-carousel .item h4 {
+    margin-top: 10px;
+    font-family: cursive;
+    font-size: 26px;
+    color: white;
+    font-weight: 600;
+}
+
+.owl-carousel .item p {
+    font-family: cursive;
+    font-size: 18px;
+    color: #777;
+    margin: 14px 0;
+    line-height: 1.6;
+}
+
+.owl-carousel .item a {
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+    line-height: 44px;
+    background: transparent;
+    border: 2px solid red;
+    border-radius: 50%;
+    color: white;
+    margin: 10px 30px 20px 0;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.owl-carousel .item a:hover {
+    background: linear-gradient(45deg, red, crimson); /* Gradient background */
+    color: white; /* Text remains white */
+    transform: rotate(10deg) scale(1.1); /* Adds slight rotation and scaling */
+    border-color: transparent; /* Makes border invisible */
+}
+
+/* Rotating Border Effect */
+.owl-carousel .item a::before {
+    content: '';
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    width: 120%;
+    height: 120%;
+    border: 2px solid red;
+    border-radius: 50%;
+    animation: rotateBorder 1.5s linear infinite;
+    visibility: hidden; /* Initially hidden */
+}
+
+.owl-carousel .item a:hover::before {
+    visibility: visible; /* Shows border on hover */
+}
+.owl-nav button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.owl-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+button.owl-prev {
+    font-size: 27px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    background-color: transparent !important;
+    border: 1px solid red !important;
+    border-radius: 50px;
+    line-height: 13px;
+    transition: background-color 0.3s, border-color 0.3s; /* Smooth transition */
+}
+
+button.owl-prev:hover {
+    background-color: red !important; /* Change to desired color */
+    color: white !important;
+}
+
+button.owl-next {
+    font-size: 27px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    background-color: transparent !important;
+    border: 1px solid red !important;
+    border-radius: 50px;
+    line-height: 13px;
+    transition: background-color 0.3s, border-color 0.3s; /* Smooth transition */
+}
+
+button.owl-next:hover {
+    background-color: red !important; /* Change to desired color */
+    color: white !important;
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+   
+    .project-box {
+        margin-left: 15px;
+    }
+
+}
+/* projects css end */
+
+/* Contact css Start */
+
+/* Contact Box */
+.contact-header{
+    font-family: cursive;
+    font-size: 52px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+.contact-header:hover {
+    color:white; /* Change color on hover */
+    transform: scale(1.05); /* Slightly increase size */
+    letter-spacing: 3px; /* Subtle letter-spacing effect */
+}
+
+.contact-box {
+  padding: 2rem;
+  border-radius: 15px;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Form Fields */
+.form-control {
+    background: #323946;
+    border: none;
+    border-radius: 8px;
+    padding: 1rem;
+    font-size: 20px;
+    font-family: cursive;
+    font-weight: 600;
+    color: #fff;
+    outline: none;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.form-control:focus {
+  background: rgba(255, 255, 255, 0.3) !important;
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2) !important;
+  color: #fff !important;
+}
+
+label {
+  font-size: 0.9rem;
+  color: #ddd;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* Button */
+.btn {
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(90deg, red, darkred, crimson, red);
+    background-size: 300%;
+    padding: 10px 15px;
+    border-radius: 35px;
+    border: none !important;
+    font-family: monospace;
+    font-size: 20px;
+    letter-spacing: 8px;
+    animation: gradientSlide 3s infinite;
+    transition: transform 0.3s ease;
+}
+
+/* Sliding Gradient Animation */
+@keyframes gradientSlide {
+    0% {
+        background-position: 0%;
+    }
+    50% {
+        background-position: 100%;
+    }
+    100% {
+        background-position: 0%;
+    }
+}
+
+/* Hover Effect */
+.btn:hover {
+    transform: scale(1.1); /* Slight enlargement */
+    box-shadow: 0 4px 15px rgba(255, 0, 0, 0.6); /* Subtle shadow */
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@media (max-width: 768px) {
+    .form-control{
+        margin-top: 12px;
+    }
+}
+/* Contact css End */
+
+/* Footer css Start */
+footer {
+    background-color: black; /* Dark background similar to Bootstrap's bg-dark */
+    color: white; /* Text color for footer content */
+}
+.Rights {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    margin: 0; /* Remove default paragraph margin */
+    font-family: cursive;
+    font-size: 20px; /* Adjust font size */
+}
+.icon {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+} 
+
+footer .chevrons-up {
+    font-size: 25px;
+    width: 52px;
+    height: 52px;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    background: transparent;
+    border: 2px solid red;
+    border-radius: 50%;
+    color: red;
+    margin: 10px 30px 20px 0;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease; /* Smooth transition */
+}
+footer .chevrons-up::before {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: red;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    transition: all 0.4s ease;
+    z-index: -1; /* Place behind the text */
+}
+
+footer .chevrons-up:hover::before {
+    top: 0; /* Slide into view */
+}
+
+footer .chevrons-up:hover {
+    color: white; /* Change icon color on hover */
+}
+@media (max-width: 600px) {
+    footer {
+        margin: -32px;
+    }
+    footer p {
+        font-size: 15px; /* Adjust font size */
+    }
+    .footer-row {
+        flex-direction: column-reverse;
+    }
+}
+@media (max-width: 600px){
+    html.sr {
+        margin-left: 30px;
+    }
+}
+
